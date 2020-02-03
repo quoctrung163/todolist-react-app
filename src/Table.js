@@ -17,9 +17,6 @@ const TableBody = props => {
       <tr key={index}>
         <td>{row.name}</td>
         <td>{row.job}</td>
-        <td>
-          <button />
-        </td>
       </tr>
     );
   });
@@ -29,18 +26,14 @@ const TableBody = props => {
 
 class Table extends Component {
   render() {
-    const { characterData, removeCharacter } = this.props;
+    const { characterData } = this.state;
 
     return (
       <table>
         <TableHeader />
-        <TableBody
-          characterData={characterData}
-          removeCharacter={removeCharacter}
-        />
+        <TableBody characterData={characterData} />
       </table>
     );
   }
 }
-
 export default Table;

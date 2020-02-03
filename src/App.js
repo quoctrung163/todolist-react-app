@@ -37,10 +37,9 @@ class App extends Component {
     const { characters } = this.state;
     return (
       <div className="container">
-        <Table
-          characterData={characters}
-          removeCharacter={this.removeCharacter}
-        />
+        <h1>TodoList-ReactJS</h1>
+        <p>Add a character with a name and a job to the table.</p>
+        <Table characterData={characters} />
       </div>
     );
   }
